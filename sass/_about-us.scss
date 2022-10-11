@@ -1,0 +1,125 @@
+.about-us {
+  font-family: "Raleway", sans-serif;
+
+  &__number-two {
+    background-color: var(--about-us-back);
+  }
+  &__title.two {
+    font-size: 50px;
+    color: var(--about-us-title);
+    padding-top: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+  }
+  &__description {
+    font-family: "Roboto", sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #627792;
+    margin-bottom: 50px;
+    font-weight: 500;
+  }
+  &__square-container {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  &__square {
+    width: 33%;
+    padding: 20px 20px;
+    position: relative;
+    transition: 0.5s;
+    &:hover {
+      transform: translateY(-5%);
+    }
+    @media (max-width: 1023px) {
+      width: 45%;
+    }
+  }
+  &__square-words {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    @media (max-width: 1279px) {
+      font-size: 22px;
+    }
+    @media (max-width: 729px) {
+      font-size: 18px;
+    }
+  }
+  &__front-image {
+    background-image: url(../img/man.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+    margin-top: -14vh;
+  }
+
+  &__text-image {
+    color: white;
+    padding-top: 17vh;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+  }
+  &__about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icons-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-basis: 30%;
+    text-align: center;
+    color: white;
+  }
+  &__icon {
+    width: 17%;
+    margin: 20px auto;
+  }
+  &__icons-title {
+    font-size: 35px;
+    letter-spacing: 1px;
+    @media (max-width: 729px) {
+      font-size: 30px;
+    }
+  }
+  &__icons-about {
+    font-size: 20px;
+    padding: 20px 30px;
+    line-height: 1.3;
+    @media (max-width: 729px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  &.pattern {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+  }
+}
+
+.max-width {
+  max-width: 1600px;
+  margin: 0 auto;
+}

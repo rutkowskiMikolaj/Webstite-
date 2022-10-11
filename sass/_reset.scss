@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: white;
+  --logo-color: #354d77;
+  --area: rgb(119, 209, 245);
+  --link: #627792;
+  --about-us-back: rgb(248, 248, 248);
+  --about-us-title: #354d77;
+  --prices: #fff;
+  --box-color: rgb(16, 180, 245);
+  --box: rgb(248, 248, 248);
+}
+
+.darkmode {
+  --background: #2c3333;
+  --logo-color: #fff;
+  --area: #395b64;
+  --link: #e7f6f2;
+  --about-us-back: #a5c9ca;
+  --about-us-title: #395b64;
+  --prices: #a5c9ca;
+  --box-color: #2c3333;
+  --box: #e7f6f2;
+}

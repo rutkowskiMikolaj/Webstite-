@@ -1,0 +1,120 @@
+@import "reset";
+@import "header";
+
+.valuation {
+  height: 100vh;
+  background-image: url(../patterns/bg4.svg);
+
+  &__title {
+    padding-top: 20vh;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__about {
+    flex-basis: 53%;
+  }
+
+  &__about {
+    font-weight: bold;
+    color: white;
+    font-size: 45px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  &__about-text1 {
+    margin-top: 40px;
+  }
+  &__about-text2 {
+    padding-top: 40px;
+  }
+  &__input-container {
+    flex-basis: 47%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 50px;
+  }
+  &__checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-between;
+  }
+  &__checkbox-title {
+    flex-basis: 100%;
+    font-size: 35px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+  }
+  &__single-checkbox {
+    width: 4vw;
+    height: 4vw;
+    border: 1px solid #dcdcdc;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+  }
+  &__checkbox {
+    width: 18px;
+    height: 18px;
+  }
+  &__checkbox-info {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    font-family: "Raleway", sans-serif;
+  }
+  &.darkmode {
+    background-image: url(../patterns/bg3.svg);
+    & .valuation__checkbox {
+      accent-color: #a5c9ca;
+    }
+    & .valuation__checkbox-info {
+      color: #dcdcdc;
+    }
+  }
+}
+
+.inputs {
+  margin-bottom: 10px;
+  width: 50%;
+  padding: 8px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--logo-color);
+}

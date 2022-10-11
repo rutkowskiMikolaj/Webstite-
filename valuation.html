@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/valuation.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <h1 class="header__logo"> <a href="index.html" >expressWEB</a></h1>
+        <a href="#" class="header__language">PL</a>
+         <label class="where" >
+          <input class="checkbox" type="checkbox">
+          <span class="check"></span>
+        </label>
+      </div>
+    </header>
+    <section class="valuation">
+      <h1 class="valuation__title" data-key="main">Write to us!</h1>
+      <div class="valuation__wrap">
+        <div class="valuation__about">
+          <p class="valuation__about-text">
+            <p class="valuation__about-text1" data-key="main2"> Get a free valuation,</p><p  class="valuation__about-text2" data-key="main3">or some answers to your questions</p> 
+          </p>
+        </div> 
+        <div class="valuation__input-container">
+          <div class="valuation__checkbox-container">
+            <p class="valuation__checkbox-title" data-key="pages">~ How many pages?</p>
+            <div class="valuation__single-checkbox">
+              <P class="valuation__checkbox-info" data-key="onePage">single page</P>
+              <input type="radio" name="check" class="valuation__checkbox" />
+            </div>
+            <div class="valuation__single-checkbox">
+              <P class="valuation__checkbox-info" data-key="twoPage">1-4 pages</P>
+              <input type="radio" name="check" class="valuation__checkbox" />
+            </div>
+            <div class="valuation__single-checkbox">
+              <P class="valuation__checkbox-info" data-key="threePage">5-10 pages</P>
+              <input type="radio" name="check" class="valuation__checkbox " />
+            </div>
+            <div class="valuation__single-checkbox">
+              <P class="valuation__checkbox-info" data-key="fourPage">11+ pages</P>
+              <input type="radio" name="check" class="valuation__checkbox" />
+            </div>
+          </div>
+          <input
+            required
+            type="text"
+            name="name"
+            class="valuation__name inputs"
+            placeholder="Your name"
+          />
+          <input
+            required
+            type="email"
+            name="mail"
+            class="valuation__adres inputs"
+            placeholder="Your E-mail"
+          />
+          <input
+            required
+            type="number"
+            name="number"
+            class="valuation__telephone inputs"
+            placeholder="Your phone number"
+          />
+          <textarea name="text" placeholder="Text area" class="valuation__text inputs" name="" id="" cols="30" rows="10"></textarea>
+          <input type="text " class="valuation__veryfication inputs" />
+          <button class="valuation__send inputs" data-key = "send">Send</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/languageV.js"></script>
+  <script src="js/darkmodeV.js"></script>
+</html>
